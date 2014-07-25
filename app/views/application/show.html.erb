@@ -1,32 +1,26 @@
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-inverse" role="navigation">
   <div class="container-fluid">
     <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-      <button>
-      <a class="navbar-brand" href="">Bookmarks</a>
       </button>
+        <a class="navbar-brand" href="">Bookmarks</a>
+      <ul class="nav navbar-nav">
+        <li><a href="http://formidable-casterly-rock-91-130975.use1-2.nitrousbox.com/bookmarks/1">Google</a></li>
+        <li><a href="http://formidable-casterly-rock-91-130975.use1-2.nitrousbox.com/bookmarks/2">Facebook</a></li>
+        <li><a href="http://formidable-casterly-rock-91-130975.use1-2.nitrousbox.com/bookmarks/3">Nitrous</a></li>
+      </ul>
     </div>
-
-  </div>
+    </div>
 </nav>
 <div class="container">
   <div class="row">
       <h1>
-        <a href="http://www.google.com">Google</a>
-        <small>lets you search for stuff</small>
+        <a href="<%=@BookmarkYay.url %>"><%= @BookmarkYay.name %></a>
+        <small><%= @BookmarkYay.description %></small>
       </h1>
-    <br>
-     <h1>
-        <a href="http://www.facebook.com">Facebook</a>
-        <small>lets you connect to people online</small>
-      </h1>
-    <br>
-     <h1>
-        <a href="https://www.nitrous.io">Nitrous</a>
-        <small>lets you make code online</small>
-      </h1>
-    </div>
   </div>
 </div>
